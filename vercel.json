@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "bulutvidanjor.com/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/bulutvidanjor.com/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/bulutvidanjor.com/$1"
+    }
+  ]
+}
